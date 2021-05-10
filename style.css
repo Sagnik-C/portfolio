@@ -1,0 +1,139 @@
+body{
+    background-color:rgba(233, 243, 255, 0.856);
+    background-image: url("blue-snow.png");
+}
+
+.carousel-item{
+    height: auto;
+    width: 100%;
+}
+.flex-container, .flex-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container> h1{
+    margin:15px;
+    width: 25%;
+    border: 2px solid;
+    background-color: rgb(142, 0, 207);
+    text-align: center;
+    border-radius: 10px;
+}
+.flex-container2> p{
+    background-color: midnightblue;
+    color:mistyrose;
+    width:40%;
+    border: dashed 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    word-spacing: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.hinf> h1{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    background-color: blueviolet;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.info{
+    display:flex;
+    justify-content: space-between;
+    margin: 250px 15px 150px 15px;
+}
+.acad, .extra{
+    width:30%;
+    border: white 2px dashed;
+    padding: 2px;
+    background-color:#336699;
+    color:mistyrose;
+    border-radius: 10px;
+    line-height: 30px;
+    font-size: 18px;
+}
+.pc{
+    margin-top: 50px;
+}
+.head2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.head2> h2{
+    border:2px solid;
+    margin:100px 25px;
+    width:15%;
+    text-align: center;
+    background-color: rgb(142, 0, 207);
+    border-radius: 20px;
+    font-size: 50px;
+}
+.programming, .others{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+.head21{
+    
+    margin: 15px;
+}
+.head21{
+    border:rgb(142, 0, 207);
+    background-color: royalblue;
+    color:mistyrose;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.html, .css, .cpp, .c, .bstrap, .python{
+    
+    justify-content: center;
+    align-items: center;
+    align-items: baseline;
+    position: relative;
+    transition: position 2s;
+}
+.html:hover, .css:hover, .cpp:hover, .c:hover, .python:hover, .bstrap:hover {
+    bottom: 10px;
+}
+.communication, .teamplay, .methodical{
+    margin:25px;
+}
+.others>.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+  }
+  footer>img{
+      float:left;
+      width: 100px;
+      height: auto;
+      margin: 0 25px;;
+  }
+  footer{
+      margin-top: 300px;
+  }
+@media only screen and (max-width: 600px) {
+    .flex-container> h1, .flex-container2>p{
+        margin: 50px;
+        width:100%;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+    .acad, .extra{
+        width:100%;
+        margin: 15px;
+    }
+    .extra{ margin-top: 50px;}
+    
+    .head2>h2{width:100%;}
+}
