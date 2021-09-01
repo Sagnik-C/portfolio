@@ -2,7 +2,144 @@ body{
     background-color:rgba(233, 243, 255, 0.856);
     background-image: url("blue-snow.png");
 }
+a{
+    text-decoration: none;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-right: 50px;
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 10vh;
+    transition: all 0.5s;
+    z-index: 1;
+    border-bottom: 1px solid rgba(230, 228, 228, 0.5);
+}
+.nav #menu{
+    display:none;
+}
+.moblist{
+    width: 100%;
+    height: max-content;
+    display: none;
+}
+.list a{
+    display:block;
+    float:left;
+    margin: 25px;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+}
+.intro{
+    position: relative;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(to bottom, rgba(5, 16, 31, 0.8), rgba(12, 31, 38, 0.8), rgba(28, 43, 44, 0.8), rgba(47, 55, 52, 0.8), rgba(65, 67, 64, 0.8)), url("stech3.jpg");
+    width: 100%;
+    height: 80vh;
+} 
 
+.title1{
+    position: relative;
+    text-align: center;
+    top: 36%;
+    font-size: 50px;
+    color: white;
+    animation-name: head1;
+    animation-duration: 1.5s;
+}
+.title2{
+    position: relative;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    width: max-content;
+    animation-name: head2;
+    animation-duration: 1.5s;
+    color: white;
+    
+}
+
+@keyframes head2 {
+    0% {
+        transform: translateX(-15px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(10px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes head1 {
+    0% {
+        transform: translateX(15px);
+        opacity: 0;
+    }
+    60% {
+        transform:translateX(-10px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .title2{
+        letter-spacing: 2px;
+        left: 1%;
+        font-size: 19px;
+        margin-left: 2px;
+    }
+    .nav .list{
+        display: none;
+    }
+    .nav #menu{
+        display: block;
+    }
+    .nav i{
+        font-size: 30px;
+        position: relative;
+        left: 30px;
+        top: 20px;
+        color: white;
+    }
+    .moblist{
+        position: absolute;
+        top: 64px;
+        
+        background-color: rgba(50, 44, 44, 1);
+        
+    }
+    .moblist a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100%;
+        margin: 15px 10px;
+        height: max-content;
+        font-size: 15px;
+    }
+    .moblist a:hover{
+        background-color: rgb(42, 38, 38);
+    }
+    .intro .title2{
+        position: relative;
+        left: 22%;
+    }
+}
 .carousel-item{
     height: auto;
     width: 100%;
